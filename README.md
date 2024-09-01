@@ -119,5 +119,15 @@ The Decision Tree model shows improved recall and precision over logistic regres
 - **Weighted Average:** 
   - Accounts for the imbalance in class sizes and shows that the overall model performance is skewed by its strong performance on the majority class ("N").
 
-### Recommendations
-- Improve the model's ability to predict "Y" outcomes, potentially through data augmentation, rebalancing techniques, or experimenting with different algorithms or hyperparameters.
+The *Decision Tree Mosel's* ability to handle categorical data, capture non-linear relationships, provide insights into feature importance, and perform relatively well on imbalanced datasets makes it a suitable choice for this specific application. Its transparency and ease of visualization make it ideal for use in environments where decisions need to be understood and justified, such as in law enforcement and community relations.
+
+## Recommendations
+* *Training on High Impact Factors* - Provide additional training focused on interpreting and responding to factors that have the most significant impact on stop outcomes.
+* *Real-Time Alerts* - Develop a system to provide real-time feedback to officers based on predictive analytics models. For example, if a stop has a high probability of being unjustified based on past data, the system can alert the officer to reassess the situation.
+* *Optimize Officer Deployment* - Assign officers to areas based on model insights where their presence is most likely to prevent crime without leading to unjustified stops.
+
+## For more information:
+View the [jupyter notebook](https://github.com/DavidGathimbaM/Terry-Traffic-Stops-Data-Science/blob/main/index.ipynb) file or the [presentation](https://github.com/DavidGathimbaM/Terry-Traffic-Stops-Data-Science/blob/main/Predicting%20Arrests%20in%20Terry%20Traffic%20Stops.pptx) linked. 
+
+## David Mwai Gathimba
+Email: david.gathimba@student.moringaschool.com
