@@ -53,6 +53,7 @@ The primary goal of this project is to predict the likelihood of an arrest durin
 *Model Limitations:* Both models showed limitations with imbalanced classes, which affected recall and precision metrics. Future improvements could include using balancing techniques or acquiring more balanced datasets.
 
 ## Visualization of Results
+##
 *Linear Regression Confusion Matrix*
 ![alt text](Images/LR%20COR.png)
 
@@ -70,7 +71,7 @@ The primary goal of this project is to predict the likelihood of an arrest durin
 
 The model has a high accuracy and specificity, indicating it is good at identifying the "No Arrest" class correctly. However, the model has low precision and recall for the "Arrest" class. This suggests that the model is not very effective at predicting the "Arrest" class. It misses many actual "Arrest" cases (low recall) and has a relatively high rate of false positives when it does predict "Arrest" (low precision).
 
-
+## 
 *Decision Tree Confusion Matrix*
 ![alt text](Images/dt%20con.png)
 
