@@ -53,3 +53,37 @@ The primary goal of this project is to predict the likelihood of an arrest durin
 *Model Limitations:* Both models showed limitations with imbalanced classes, which affected recall and precision metrics. Future improvements could include using balancing techniques or acquiring more balanced datasets.
 
 ## Visualization of Results
+*Linear Regression Confusion Matrix*
+![alt text](Images/LR%20COR.png)
+
+*True Negative (TN): 10,696*
+* This is the number of instances where the actual class was "No Arrest" (No) and the model correctly predicted "No Arrest" (No).
+
+*False Positive (FP): 225*
+* This is the number of instances where the actual class was "No Arrest" (No) but the model incorrectly predicted "Arrest" (Yes).
+
+*False Negative (FN): 1,087*
+* This is the number of instances where the actual class was "Arrest" (Yes) but the model incorrectly predicted "No Arrest" (No).
+
+*True Positive (TP): 202*
+* This is the number of instances where the actual class was "Arrest" (Yes) and the model correctly predicted "Arrest" (Yes).
+
+The model has a high accuracy and specificity, indicating it is good at identifying the "No Arrest" class correctly. However, the model has low precision and recall for the "Arrest" class. This suggests that the model is not very effective at predicting the "Arrest" class. It misses many actual "Arrest" cases (low recall) and has a relatively high rate of false positives when it does predict "Arrest" (low precision).
+
+
+*Decision Tree Confusion Matrix*
+![alt text](Images/dt%20con.png)
+
+True Negative (TN): 10,000
+The number of instances where the actual class was "No Arrest" (No) and the model correctly predicted "No Arrest" (No).
+
+False Positive (FP): 429
+The number of instances where the actual class was "No Arrest" (No), but the model incorrectly predicted "Arrest" (Yes).
+
+False Negative (FN): 775
+The number of instances where the actual class was "Arrest" (Yes), but the model incorrectly predicted "No Arrest" (No).
+
+True Positive (TP): 514
+The number of instances where the actual class was "Arrest" (Yes) and the model correctly predicted "Arrest" (Yes).
+
+The Decision Tree model shows improved recall and precision over logistic regression for the "Arrest" class but still struggles with a moderate rate of false negatives and false positives. It has high specificity and accuracy, making it better suited for scenarios where correctly identifying the "No Arrest" class is more important.
