@@ -34,8 +34,22 @@ The primary goal of this project is to predict the likelihood of an arrest durin
 *Cross-Validation:*
 * Conducted 5-fold cross-validation to evaluate the robustness of both models across different data subsets, ensuring generalizable results.
 ## Evaluation
+
 *Performance Metrics: Both models were evaluated using:*
-*Accuracy:* Overall correctness of predictions.
-*Precision and Recall:* To assess the balance between false positives and false negatives.
-*F1-Score:* To provide a single metric combining both precision and recall.
-*ROC-AUC:* Area Under the Curve to evaluate the model's discriminative ability.
+
+* *Accuracy:* Overall correctness of predictions.
+* *Precision and Recall:* To assess the balance between false positives and false negatives.
+* *F1-Score:* To provide a single metric combining both precision and recall.
+* *ROC-AUC:* Area Under the Curve to evaluate the model's discriminative ability.
+
+*Final Model Selection: The Decision Tree model was selected as the final model due to its superior performance in recall and its ability to provide interpretable rules, despite Logistic Regression providing a more balanced precision.*
+
+## Results and Interpretation
+
+*Key Findings:*
+* The Decision Tree model identified 'Stop Resolution' and 'Subject Perceived Race' as critical predictors of an arrest during a traffic stop.
+* Logistic Regression showed that linear relationships between variables could still provide substantial insights, though with some limitations in capturing non-linear dynamics.
+
+*Model Limitations:* Both models showed limitations with imbalanced classes, which affected recall and precision metrics. Future improvements could include using balancing techniques or acquiring more balanced datasets.
+
+## Visualization of Results
