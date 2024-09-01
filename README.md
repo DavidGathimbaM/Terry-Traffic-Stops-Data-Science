@@ -90,3 +90,34 @@ True Positive (TP): 514
 The number of instances where the actual class was "Arrest" (Yes) and the model correctly predicted "Arrest" (Yes).
 
 The Decision Tree model shows improved recall and precision over logistic regression for the "Arrest" class but still struggles with a moderate rate of false negatives and false positives. It has high specificity and accuracy, making it better suited for scenarios where correctly identifying the "No Arrest" class is more important.
+
+## Final Model
+## Decision Tree Model
+### Model Performance Metrics
+
+| Metric                        | Class "N" (No) | Class "Y" (Yes) | Macro Avg | Weighted Avg |
+|-------------------------------|----------------|-----------------|-----------|--------------|
+| **Precision**                 | 0.93           | 0.54            | 0.74      | 0.89         |
+| **Recall**                    | 0.96           | 0.40            | 0.68      | 0.90         |
+| **F1-Score**                  | 0.95           | 0.46            | 0.70      | 0.89         |
+| **Support (Number of Cases)** | 10,921         | 1,289           | -         | 12,210       |
+
+### Overall Accuracy
+- **Accuracy:** 90.13%
+
+### Interpretation
+
+- **Class "N" (No):** 
+  - The model performs very well, with high precision (0.93), recall (0.96), and F1-score (0.95). This indicates it is highly effective in correctly predicting "No" outcomes.
+  
+- **Class "Y" (Yes):** 
+  - The model has moderate precision (0.54) but lower recall (0.40), leading to a lower F1-score (0.46). This suggests the model struggles with correctly identifying "Yes" cases, indicating the presence of both false positives and false negatives.
+
+- **Macro Average:** 
+  - Reflects an average model performance across both classes without weighting for class size. Shows that there's room for improvement in the model's handling of the minority class ("Y").
+
+- **Weighted Average:** 
+  - Accounts for the imbalance in class sizes and shows that the overall model performance is skewed by its strong performance on the majority class ("N").
+
+### Recommendations
+- Improve the model's ability to predict "Y" outcomes, potentially through data augmentation, rebalancing techniques, or experimenting with different algorithms or hyperparameters.
