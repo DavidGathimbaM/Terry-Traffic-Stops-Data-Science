@@ -33,3 +33,9 @@ The primary goal of this project is to predict the likelihood of an arrest durin
 * Employed Grid Search for hyperparameter tuning on the Decision Tree model to optimize its performance.
 *Cross-Validation:*
 * Conducted 5-fold cross-validation to evaluate the robustness of both models across different data subsets, ensuring generalizable results.
+## Evaluation
+*Performance Metrics: Both models were evaluated using:*
+*Accuracy:* Overall correctness of predictions.
+*Precision and Recall:* To assess the balance between false positives and false negatives.
+*F1-Score:* To provide a single metric combining both precision and recall.
+*ROC-AUC:* Area Under the Curve to evaluate the model's discriminative ability.
