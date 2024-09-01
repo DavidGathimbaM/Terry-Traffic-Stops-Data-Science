@@ -53,8 +53,9 @@ The primary goal of this project is to predict the likelihood of an arrest durin
 *Model Limitations:* Both models showed limitations with imbalanced classes, which affected recall and precision metrics. Future improvements could include using balancing techniques or acquiring more balanced datasets.
 
 ## Visualization of Results
-##
+
 *Linear Regression Confusion Matrix*
+##
 ![alt text](Images/LR%20COR.png)
 
 *True Negative (TN): 10,696*
@@ -73,6 +74,7 @@ The model has a high accuracy and specificity, indicating it is good at identify
 
 ## 
 *Decision Tree Confusion Matrix*
+##
 ![alt text](Images/dt%20con.png)
 
 True Negative (TN): 10,000
